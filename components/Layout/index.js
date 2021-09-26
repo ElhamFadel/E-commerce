@@ -10,7 +10,7 @@ function Layout({children}) {
       downTolerance={10}
       style={{zIndex: '20', height: '6.5em'}}
     >
-      <Header location={location} />
+      <Header  />
     </Headroom>
     <Container text>{children}</Container>
     <Footer />
