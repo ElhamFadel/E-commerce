@@ -10,7 +10,7 @@ module.exports = {
   title:"Time Zone eCommerse",
   author:"Elham Fadel Elshami",
   description:"Time Zone website .........soon",
-  siteUrl:"....soon"
+  // siteUrl:"....soon"
   },
   plugins: [`gatsby-plugin-react-helmet`],
 }
