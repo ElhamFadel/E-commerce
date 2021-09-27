@@ -1,5 +1,16 @@
-import React from "react"
+import React from 'react'
+import ProductList from '../components/ProductList'
+import SEO from '../components/SEO'
+import Layout from '../components/Layout'
 
-export default function Home() {
-  return <div>Hello world!</div>
+const StoreIndex = () => {
+   const title = 'Store'
+  return (
+    <Layout >
+      <SEO title={siteTitle} />
+      <ProductList />
+    </Layout>
+  )
 }
+
+export default StoreIndex

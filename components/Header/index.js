@@ -1,10 +1,11 @@
 import React from 'react'
-
+import {Layout} from 'antd'
 function Header() {
+    const {Header} = Layout
     return (
-        <div>
+        <Header>
            Header 
-        </div>
+        </Header>
     )
 }
 

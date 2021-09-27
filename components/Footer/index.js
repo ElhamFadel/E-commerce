@@ -1,10 +1,11 @@
 import React from 'react'
-
+import {Layout} from 'antd'
 function Footer() {
+     const {Footer} = Layout
     return (
-        <div>
+        <Footer>
             Footer
-        </div>
+        </Footer>
     )
 }
 

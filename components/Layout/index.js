@@ -1,10 +1,11 @@
 import React from 'react'
 import Header from '../Header'
 import Footer from '../Footer'
-
-function Layout({children}) {
+import { Layout } from "antd"
+function LayoutFlow({children}) {
+    const {Content} = Layout;
     return (
-        <>
+        <Layout >
         <Headroom
       upTolerance={10}
       downTolerance={10}
@@ -12,10 +13,12 @@ function Layout({children}) {
     >
       <Header  />
     </Headroom>
-    <Container text>{children}</Container>
+    <Content style={{ padding: '0 50px', marginTop: '6.5em' }}>
+    {children}
+    </Content>
     <Footer />
-    </>
+    </Layout>
     )
 }
 
-export default Layout
+export default LayoutFlow
