@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../Header'
 import Footer from '../Footer'
+import Headroom from 'react-headroom'
 import { Layout } from "antd"
 function LayoutFlow({children}) {
     const {Content} = Layout;

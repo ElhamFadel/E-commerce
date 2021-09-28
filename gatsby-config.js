@@ -12,5 +12,9 @@ module.exports = {
     description: "Time Zone website .........soon",
     // siteUrl:"....soon"
   },
-  plugins: [`gatsby-plugin-react-helmet`, "gatsby-plugin-antd"],
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-antd",
+    `gatsby-plugin-styled-components`,
+  ],
 }

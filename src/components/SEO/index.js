@@ -1,5 +1,6 @@
 import React from 'react'
 import  { useStaticQuery, graphql } from 'gatsby'
+import PropTypes from "prop-types"
 import {Helmet} from "react-helmet"
 
 function SEO({description,lang,title}) {
@@ -16,7 +17,7 @@ function SEO({description,lang,title}) {
         }
       `
     )
-
+    const metaDescription = description || site.siteMetadata.description
     return (
          <Helmet
       htmlAttributes={{
@@ -60,9 +61,9 @@ function SEO({description,lang,title}) {
         {name: 'msapplication-TileColor', content: '#da532c'},
         {name: 'theme-color', content: '#ffffff'},
       ]
-        .concat(meta)}
+     }
     >
-        {/* just to learn  */}
+
       <link
         rel="icon"
         type="image/png"
